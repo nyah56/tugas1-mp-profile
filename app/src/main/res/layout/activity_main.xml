@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blk"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="405dp">
+        <LinearLayout
+            android:background="@drawable/gradientbackground"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                app:tint="@color/lightgray"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_baseline_menu_24"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/nyan"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/gry"
+                    android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="ibnu2856"
+                android:textColor="@color/lightgray"
+                android:textSize="21sp"
+                />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="95dp"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            app:cardCornerRadius="13dp"
+            app:cardBackgroundColor="@color/ppl2"
+            app:background="@drawable/shadow"
+            >
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Post"
+                        android:textColor="@color/lightgray"></TextView>
+
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/opc"
+                        android:textSize="18sp"
+                        ></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.75">
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow"
+                        android:textColor="@color/lightgray"
+                        ></TextView>
+
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="136"
+                        android:textColor="@color/opc"
+                        android:textSize="18sp"
+                        ></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follower"
+                        android:textColor="@color/lightgray"
+                        ></TextView>
+
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="136"
+                        android:textColor="@color/opc"
+                        android:textSize="18sp"
+                        ></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginTop="1dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:layout_marginBottom="25dp"
+        >
+        <ImageView
+            app:tint="@color/lightgray"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_email_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="ibnu@itn.ac.id"
+            android:textColor="@color/opc"
+            android:fontFamily="@font/roboto_light"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:layout_marginBottom="25dp"
+        >
+        <ImageView
+            app:tint="@color/lightgray"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_local_phone_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="+62 1918128"
+            android:textColor="@color/opc"
+            android:fontFamily="@font/roboto_light"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:layout_marginBottom="25dp"
+        >
+        <ImageView
+            app:tint="@color/lightgray"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_forum_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Show All Chats"
+            android:textColor="@color/opc"
+            android:fontFamily="@font/roboto_light"/>
+
+    </LinearLayout>
+
+                   
+    </LinearLayout>
+
+</LinearLayout>
+
+
